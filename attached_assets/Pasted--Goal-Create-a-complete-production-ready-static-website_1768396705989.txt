@@ -1,0 +1,35 @@
+# Goal
+Create a complete, production-ready static website for Baseline Academy (a bass guitar teaching service) that can be hosted on GitHub Pages, with clean black and grey styling, intuitive navigation, and a prominent "Book Now" call-to-action. The website should be built with HTML, CSS, and JavaScript where necessary, suitable for live coding in Replit. All content and documentation should use British English spelling and terminology.
+
+# Return format
+Deliver the following as a complete, functional codebase ready to use in Replit:
+- Full HTML structure for all pages (Home, About, Services, Lessons, Contact, FAQ)
+- Single consolidated CSS file with black and grey colour scheme
+- JavaScript file for interactive elements (navigation, form handling, smooth scrolling)
+- Complete documentation file with step-by-step instructions for:
+  - Testing locally in Replit
+  - Deploying to GitHub Pages without a custom domain
+  - Deploying to GitHub Pages with a custom domain
+- Placeholder image references with guidance on where to add actual images
+- All files organised in the correct directory structure for GitHub Pages deployment
+
+# Warnings
+- Ensure all file paths use relative URLs (e.g., `./css/style.css`) to work correctly on GitHub Pages subdomains
+- The "Book Now" CTA should appear consistently across multiple pages (header, hero section, services) to maximise conversions
+- GitHub Pages requires the repository to be public; document this requirement clearly
+- When deploying with a custom domain, DNS propagation can take 24-48 hours; include this caveat in documentation
+- Placeholder images must be clearly marked so the user knows exactly where to replace them with actual content
+- Ensure the navigation menu is responsive and functional on mobile devices
+- Test all internal links before final deployment to avoid broken navigation
+- Use British English spelling throughout all code comments, documentation, and user-facing content (e.g., "colour" not "color", "organise" not "organize", "maximise" not "maximize")
+
+# Context
+- The website is for a bass guitar teaching service called Baseline Academy
+- Colour scheme: black and grey only (no other colours)
+- Hosting platform: GitHub Pages (free static hosting)
+- Development environment: Replit (browser-based IDE)
+- Target audience: prospective bass guitar students
+- The site should include suggested menu pages: Home, About, Services, Lessons, Contact, FAQ
+- User wants images integrated during the coding process with placeholder guidance
+- Documentation must cover both custom domain and non-custom domain GitHub Pages deployment scenarios
+- All content, including code comments, variable names in user-facing elements, and documentation, should use British English conventions
