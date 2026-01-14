@@ -29,7 +29,7 @@ export default function About() {
             <div className="space-y-8">
               <img 
                 src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800&q=80&fit=crop" 
-                alt="Alex teaching a student" 
+                alt="Jaiden teaching a student" 
                 className="w-full h-[500px] object-cover"
               />
               <div className="grid grid-cols-2 gap-8">
@@ -46,7 +46,7 @@ export default function About() {
 
             {/* Content Column */}
             <div>
-              <h3 className="font-display font-bold text-3xl mb-6">Hello, I'm Alex.</h3>
+              <h3 className="font-display font-bold text-3xl mb-6">Hello, I'm Jaiden.</h3>
               <div className="prose prose-lg text-muted-foreground">
                 <p className="mb-6">
                   I founded Baseline Academy in Midrand, South Africa, with a singular mission: to provide high-level bass instruction 
