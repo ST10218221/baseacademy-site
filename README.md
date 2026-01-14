@@ -7,7 +7,6 @@ Baseline Academy is a professional bass guitar teaching service website based in
 - **Responsive Design**: Fully mobile-optimised experience.
 - **Modern Aesthetic**: A strict monochrome visual identity (black, grey, white) using Oswald for headings and Inter for body text.
 - **Interactive UI**: Smooth page transitions and reveal animations powered by Framer Motion.
-- **Service Enquiry System**: Integrated contact form that persists enquiries to a PostgreSQL database.
 - **Dynamic Content**: Pages for Home, About, Services, Lessons curriculum, FAQ, and Contact.
 
 ## Technical Architecture
