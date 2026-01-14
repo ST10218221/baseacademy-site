@@ -8,10 +8,10 @@ import { Check } from "lucide-react";
 export default function Services() {
   const services = [
     {
-      title: "1-on-1 Tuition",
-      price: "£45",
+      title: "1-on-1 tuition",
+      price: "R350",
       period: "per hour",
-      description: "Bespoke private lessons focused entirely on your development. Available in-person at my London studio.",
+      description: "Bespoke private lessons focused entirely on your development. Available in-person at my Midrand studio.",
       features: [
         "Personalised curriculum",
         "Technique analysis & correction",
@@ -22,8 +22,8 @@ export default function Services() {
       popular: true
     },
     {
-      title: "Online Coaching",
-      price: "£40",
+      title: "Online coaching",
+      price: "R300",
       period: "per hour",
       description: "Professional remote instruction via Zoom. High-definition audio and multi-camera setup for clear demonstration.",
       features: [
@@ -36,10 +36,10 @@ export default function Services() {
       popular: false
     },
     {
-      title: "Intensive Workshop",
-      price: "£120",
+      title: "Intensive workshop",
+      price: "R1200",
       period: "half day",
-      description: "A 4-hour deep dive into specific topics such as Slap Technique, Walking Bass, or Sight Reading.",
+      description: "A 4-hour deep dive into specific topics such as slap technique, walking bass, or sight reading.",
       features: [
         "Focused topic mastery",
         "Small group setting (max 4)",
@@ -74,15 +74,15 @@ export default function Services() {
             {services.map((service, index) => (
               <Card key={index} className={`border-none shadow-lg rounded-none flex flex-col relative ${service.popular ? "ring-2 ring-black transform md:-translate-y-4" : ""}`}>
                 {service.popular && (
-                  <div className="absolute top-0 right-0 bg-black text-white text-xs font-bold uppercase px-3 py-1 tracking-wider">
-                    Most Popular
+                  <div className="absolute top-0 right-0 bg-black text-white text-xs font-bold px-3 py-1 tracking-wider">
+                    Most popular
                   </div>
                 )}
                 <CardHeader className="p-8 pb-4">
-                  <h3 className="font-display font-bold text-2xl uppercase tracking-wide mb-2">{service.title}</h3>
+                  <h3 className="font-display font-bold text-2xl tracking-wide mb-2">{service.title}</h3>
                   <div className="flex items-baseline mb-4">
                     <span className="text-4xl font-bold">{service.price}</span>
-                    <span className="text-muted-foreground ml-2 text-sm uppercase">{service.period}</span>
+                    <span className="text-muted-foreground ml-2 text-sm">{service.period}</span>
                   </div>
                   <p className="text-muted-foreground leading-relaxed text-sm">
                     {service.description}
@@ -101,8 +101,8 @@ export default function Services() {
                 </CardContent>
                 <CardFooter className="p-8 pt-0">
                   <Link href="/contact" className="w-full">
-                    <Button className={`w-full rounded-none py-6 uppercase font-bold tracking-wider ${service.popular ? "bg-black text-white hover:bg-gray-800" : "bg-white text-black border-2 border-black hover:bg-gray-50"}`}>
-                      Book Now
+                    <Button className={`w-full rounded-none py-6 font-bold tracking-wider ${service.popular ? "bg-black text-white hover:bg-gray-800" : "bg-white text-black border-2 border-black hover:bg-gray-50"}`}>
+                      Book now
                     </Button>
                   </Link>
                 </CardFooter>
@@ -111,12 +111,12 @@ export default function Services() {
           </div>
 
           <div className="mt-20 text-center max-w-2xl mx-auto">
-            <h3 className="font-display font-bold text-2xl uppercase mb-4">Custom Programmes</h3>
+            <h3 className="font-display font-bold text-2xl mb-4">Custom programmes</h3>
             <p className="text-muted-foreground mb-8">
               Need something more specific? I offer tailored programmes for university audition preparation, 
               studio recording prep, and tour consultation.
             </p>
-            <Link href="/contact" className="font-bold uppercase tracking-widest border-b-2 border-black pb-1 hover:text-gray-600 transition-colors">
+            <Link href="/contact" className="font-bold tracking-widest border-b-2 border-black pb-1 hover:text-gray-600 transition-colors">
               Get in touch to discuss
             </Link>
           </div>

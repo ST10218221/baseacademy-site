@@ -13,7 +13,7 @@ export function Footer() {
               <div className="bg-background text-foreground p-2 rounded-none">
                 <Music className="h-5 w-5" />
               </div>
-              <span className="font-display font-bold text-xl uppercase tracking-wider">
+              <span className="font-display font-bold text-xl tracking-wider">
                 Baseline<span className="font-light">Academy</span>
               </span>
             </Link>
@@ -24,18 +24,18 @@ export function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display font-bold uppercase tracking-wider text-lg mb-6 text-white">Explore</h4>
+            <h4 className="font-display font-bold tracking-wider text-lg mb-6 text-white">Explore</h4>
             <ul className="space-y-3">
               {[
                 { label: "Home", href: "/" },
-                { label: "About Instructor", href: "/about" },
-                { label: "Tuition Services", href: "/services" },
+                { label: "About instructor", href: "/about" },
+                { label: "Tuition services", href: "/services" },
                 { label: "Curriculum", href: "/lessons" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link 
                     href={link.href}
-                    className="text-muted-foreground hover:text-white transition-colors text-sm uppercase tracking-wide"
+                    className="text-muted-foreground hover:text-white transition-colors text-sm tracking-wide"
                   >
                     {link.label}
                   </Link>
@@ -46,17 +46,17 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="font-display font-bold uppercase tracking-wider text-lg mb-6 text-white">Enquiries</h4>
+            <h4 className="font-display font-bold tracking-wider text-lg mb-6 text-white">Enquiries</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>London, United Kingdom</li>
+              <li>Midrand, South Africa</li>
               <li>info@baselineacademy.com</li>
-              <li>+44 (0) 20 1234 5678</li>
+              <li>+27 (0) 11 123 4567</li>
             </ul>
           </div>
 
           {/* Social */}
           <div>
-            <h4 className="font-display font-bold uppercase tracking-wider text-lg mb-6 text-white">Follow Us</h4>
+            <h4 className="font-display font-bold tracking-wider text-lg mb-6 text-white">Follow us</h4>
             <div className="flex space-x-4">
               <a href="#" className="p-2 bg-white/10 hover:bg-white hover:text-black transition-all">
                 <Instagram className="h-5 w-5" />
@@ -71,11 +71,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground uppercase tracking-widest">
-          <p>&copy; {new Date().getFullYear()} Baseline Academy. All Rights Reserved.</p>
+        <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-muted-foreground tracking-widest">
+          <p>&copy; {new Date().getFullYear()} Baseline Academy. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="#" className="hover:text-white transition-colors">Privacy policy</Link>
+            <Link href="#" className="hover:text-white transition-colors">Terms of service</Link>
           </div>
         </div>
       </div>

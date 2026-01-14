@@ -27,7 +27,7 @@ export function Navbar() {
           <div className="bg-foreground text-background p-2 rounded-none group-hover:scale-105 transition-transform duration-300">
             <Music className="h-6 w-6" />
           </div>
-          <span className="font-display font-bold text-2xl uppercase tracking-wider">
+          <span className="font-display font-bold text-2xl tracking-wider">
             Baseline<span className="font-light">Academy</span>
           </span>
         </Link>
@@ -38,7 +38,7 @@ export function Navbar() {
             <Link 
               key={item.href} 
               href={item.href}
-              className={`text-sm font-medium uppercase tracking-wide transition-colors hover:text-primary relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full ${
+              className={`text-sm font-medium tracking-wide transition-colors hover:text-primary relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full ${
                 isActive(item.href) ? "text-primary after:w-full" : "text-muted-foreground"
               }`}
             >
@@ -46,8 +46,8 @@ export function Navbar() {
             </Link>
           ))}
           <Link href="/contact">
-            <Button variant="default" className="rounded-none uppercase font-bold tracking-wider px-6">
-              Book Now
+            <Button variant="default" className="rounded-none font-bold tracking-wider px-6">
+              Book now
             </Button>
           </Link>
         </div>
@@ -67,7 +67,7 @@ export function Navbar() {
                     <Link 
                       key={item.href} 
                       href={item.href}
-                      className={`text-2xl font-display uppercase font-bold transition-colors hover:text-primary ${
+                      className={`text-2xl font-display font-bold transition-colors hover:text-primary ${
                         isActive(item.href) ? "text-primary" : "text-muted-foreground"
                       }`}
                       onClick={() => setIsOpen(false)}
@@ -78,8 +78,8 @@ export function Navbar() {
                 </div>
                 <div className="mt-auto pb-10">
                   <Link href="/contact" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full rounded-none py-6 text-lg uppercase font-bold tracking-wider">
-                      Book Your Session
+                    <Button className="w-full rounded-none py-6 text-lg font-bold tracking-wider">
+                      Book your session
                     </Button>
                   </Link>
                 </div>
