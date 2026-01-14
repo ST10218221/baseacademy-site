@@ -1,27 +1,10 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
-import { storage } from "./storage";
-import { api } from "@shared/routes";
-import { z } from "zod";
-import { insertInquirySchema } from "@shared/schema";
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express,
 ): Promise<Server> {
-  app.post(api.inquiries.create.path, async (req, res) => {
-    try {
-      const input = api.inquiries.create.input.parse(req.body);
-      const inquiry = await storage.createInquiry(input);
-      res.json(inquiry);
-    } catch (error) {
-      if (error instanceof z.ZodError) {
-        res.status(400).json({ message: "Invalid input", errors: error.errors });
-      } else {
-        res.status(500).json({ message: "Internal server error" });
-      }
-    }
-  });
-
+  // No API routes needed for now as we've removed the contact form persistence
   return httpServer;
 }
