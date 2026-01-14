@@ -56,13 +56,6 @@ export default function Contact() {
             </div>
 
           </div>
-
-          {/* Map Placeholder */}
-          <div className="max-w-5xl mx-auto mt-16">
-            <div className="bg-gray-100 h-96 w-full border border-gray-200 grayscale p-4 flex items-center justify-center text-muted-foreground text-sm uppercase tracking-widest">
-              [Google Map Integration]
-            </div>
-          </div>
           
         </div>
       </div>

@@ -16,12 +16,11 @@ Baseline Academy is a professional bass guitar teaching service website based in
 - **Framework**: React 18 with TypeScript.
 - **Routing**: Wouter for lightweight, efficient navigation.
 - **Styling**: Tailwind CSS with shadcn/ui components.
-- **State Management**: TanStack React Query for synchronised server state.
+- **Animations**: Framer Motion for smooth visual feedback.
 
 ### Backend
 - **Runtime**: Node.js with Express and TypeScript.
-- **Database**: PostgreSQL with Drizzle ORM for type-safe data management.
-- **API**: RESTful endpoints with Zod schema validation for robust request handling.
+- **Simplicity**: The current version is optimised for static hosting, with contact details provided directly for student enquiries.
 
 ---
 
@@ -40,21 +39,8 @@ cd baseline-academy
 npm install
 ```
 
-### 3. Environment Variables
-Create a `.env` file in the root directory and add your PostgreSQL connection string:
-```env
-DATABASE_URL=postgresql://user:password@localhost:5432/baseline_academy
-SESSION_SECRET=your_random_secret_here
-```
-
-### 4. Database Setup
-Initialise the database schema using Drizzle:
-```bash
-npm run db:push
-```
-
-### 5. Start the Application
-Run the development server (starts both frontend and backend):
+### 3. Start the Application
+Run the development server:
 ```bash
 npm run dev
 ```
@@ -65,49 +51,33 @@ The application will be available at `http://localhost:5000`.
 ## Operating System Specific Instructions
 
 ### Linux / macOS
-The project uses standard Node.js scripts and should work out-of-the-box. Ensure you have the necessary permissions for your database socket if using local PostgreSQL.
+The project uses standard Node.js scripts and should work out-of-the-box.
 
 ### Windows
-- It is highly recommended to use **WSL2 (Windows Subsystem for Linux)** for a smoother development experience.
-- If using PowerShell or CMD, ensure your execution policy allows running scripts if you encounter issues with `npm`.
-- Ensure PostgreSQL is installed and running as a service.
-
----
-
-## Testing Locally
-
-- **Manual Testing**: Navigate through the various pages and submit the contact form to verify the full-stack integration.
-- **Console Logs**: Monitor the terminal for backend logs and the browser console for frontend diagnostics.
+- It is recommended to use **WSL2 (Windows Subsystem for Linux)** for the best development experience.
+- If using PowerShell or CMD, ensure your execution policy allows running scripts.
 
 ---
 
 ## Deployment to GitHub Pages
 
-Since this project includes a dynamic Express backend for enquiry persistence, deploying to GitHub Pages (which only supports static hosting) requires a two-step approach if you wish to keep the backend functionality.
+This project is perfectly suited for GitHub Pages as a high-performance static site.
 
-### Option A: Static Deployment (No Backend)
-If you only need the static frontend:
-1. Update `client/src/main.tsx` to remove any backend-dependent features if necessary.
-2. Build the project:
+### Static Deployment
+1. Build the project:
    ```bash
    npm run build
    ```
-3. Deploy the `dist` folder to the `gh-pages` branch.
-
-### Option B: Full Stack Deployment (Recommended)
-GitHub Pages is not suitable for hosting the Node.js/PostgreSQL backend. For a full-stack experience:
-1. Deploy the backend (Express + PostgreSQL) to a service like Railway, Render, or Fly.io.
-2. Update the frontend `API_URL` to point to your hosted backend.
-3. Deploy the built frontend to GitHub Pages using the `gh-pages` package:
+2. Deploy the `dist` folder to the `gh-pages` branch. You can use the `gh-pages` package:
    ```bash
    npm install --save-dev gh-pages
    ```
-4. Add deployment scripts to `package.json`:
+3. Add deployment scripts to `package.json`:
    ```json
    "predeploy": "npm run build",
    "deploy": "gh-pages -d dist"
    ```
-5. Run: `npm run deploy`
+4. Run: `npm run deploy`
 
 ### Custom Domain Configuration
 1. In your GitHub repository, go to **Settings > Pages**.
